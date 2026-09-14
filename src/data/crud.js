@@ -1,4 +1,4 @@
-import { KeyRound, Server } from 'lucide-react';
+import { KeyRound, Server, HardDrive } from 'lucide-react';
 
 export const examples = [
     {
@@ -16,6 +16,14 @@ export const examples = [
         description: 'Lista séries renderizadas no SSR.',
         color: 'purple',
         Icon: Server,
+    },
+    {
+        id: 3,
+        method: 'Offline',
+        verb: 'Get',
+        description: 'Lista séries consumidas no SessionStorage.',
+        color: 'purple',
+        Icon: HardDrive,
     }
 ];
 
