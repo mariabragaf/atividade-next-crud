@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 
 export default function CreatePage() {
     const [openModal, setOpenModal] = useState(false);
-    const [loading, setLoading] = useState(falsae);
+    const [loading, setLoading] = useState(false);
 
     const handSubmit = async (values) => {
         try {
