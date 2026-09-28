@@ -10,7 +10,7 @@ export default function CreatePage() {
     const [openModal, setOpenModal] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const handSubmit = async (values) => {
+    const handleSubmit = async (values) => {
         try {
             await axios.post('/api/series', values);
             setOpenModal(false);
@@ -34,6 +34,13 @@ export default function CreatePage() {
                 (true)}>
                     Nova série
                 </Button>
+
+                 <FormModal
+                openModal={openModal}
+                confirmLoading={loading}
+                onSubmit={handleSubmit}
+                onCancel={ () => setOpenModal (false)}
+                />
         </main>
     )
 }
