@@ -30,5 +30,8 @@ export async function GET(req) {
         } catch (error) {
             const status = 500;
             const data = { error: 'Erro ao criar série.'};
+
+            return NextResponse.json(data, { status });
+            
         }
 }
