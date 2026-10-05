@@ -53,4 +53,12 @@ export const crud = [
         color: 'orange',
         Icon: PlusCircle, 
     },
+    {
+        id: 2,
+        method: 'Read',
+        verb: 'Get',
+        description: 'Lê série via API Route.',
+        color: 'green',
+        Icon: List, 
+    },
 ];
